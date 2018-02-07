@@ -1,0 +1,17 @@
+vi /etc/apt/sources.list
+%s/ap-northeast-2.ec2.archive.ubuntu.com/ftp.daumkakao.com/
+%s/security.ubuntu.com/ftp.daumkakao.com/
+
+sudo locale-gen ko_KR.UTF-8
+locale -a
+vi /etc/default/locale
+LANG="ko_KR.UTF-8" 
+LANGUAGE="ko_KR:ko:en_US:en" 
+
+
+apt update
+apt upgrade
+apt install tree p7zip-full rdate sysstat make
+
+reboot
+

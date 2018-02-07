@@ -1,0 +1,7 @@
+pip install --upgrade pip
+pip install django~=1.11.0
+
+mkdir django
+cd django
+django-admin startproject mysite .
+

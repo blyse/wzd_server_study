@@ -1,0 +1,15 @@
+vi mysite/setting.py
+
+TIME_ZONE = 'Asia/Seoul'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+ALLOWED_HOSTS = ['aws public DNS']  // CHECK YOUR AWS EC2 INFO
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+
